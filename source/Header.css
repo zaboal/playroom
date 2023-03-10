@@ -11,7 +11,7 @@
     display: block;
     padding: 4px 0px 4px 0px;
 }
-.header > div.link {
+/* .header > div.link {
     display: block;
     position: relative;
     top: -32px;
@@ -44,24 +44,4 @@
     position: relative;
     top: calc(100% - 14px - (50% / 4));
     font-size: 14px;
-}
-@keyframes check {
-    0% {
-        opacity: 0;
-        height: 32px;
-    }
-    100% {
-        opacity: 1;
-        height: 64px;
-    }
-}
-@keyframes checks {
-    0% {
-        opacity: 1;
-        height: 64px;
-    }
-    100% {
-        opacity: 0;
-        height: 64px;
-    }
-}
+} */
