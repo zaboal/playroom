@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Martian+Mono");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Martian Mono", monospace;
+    font-size: 14pt;
+}
+body {
+    background: #24232f;
+}
+
+.elem {
+    width: 20px;
+    height: 2000px;
+}
