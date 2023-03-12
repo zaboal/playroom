@@ -11,38 +11,7 @@ body {
     background: #24232f;
 }
 
-/* Приобретение предложения */
-/* .buy {
-  position: relative;
-  width: 511px;
-  height: 334.15px;
-  left: 705px;
-  top: 401.63px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  gap: 32px 0px;
-  padding: 0px;
-  flex-wrap: wrap;
-  align-content: center;
-} */
-
-/* Стоимость предложения */
-/* .buy > h1 {
-    width: 576px;
-    height: 58px;
-    color: rgba(244, 243, 255, 1);
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: 8px;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-  } */
-
 .elem {
-    width: 20px;
-    height: 2000px;
+  width: 100vw;
+  height: 100vh;
 }

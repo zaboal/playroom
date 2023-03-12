@@ -20,37 +20,3 @@
     display: block;
     padding: 4px 0px 4px 0px;
 }
-/* .header > div.link {
-    display: block;
-    position: relative;
-    top: -32px;
-    margin: auto;
-    width: 96px;
-    height: 32px;
-    padding: 4px 0px 4px 0px;
-    opacity: 0;
-    background: #04030f;
-    background-image: url(img/g5183-6.svg);
-    background-repeat: no-repeat;
-    background-size: 96px;
-    background-position: 50% 4px;
-    transition: opacity .3s ease, height .3s ease, top 0s ease;
-    animation: checks .3s forwards;
-}
-.header > div.link:hover {
-    animation: check .3s forwards;
-    width: 100%;
-    height: 64px;
-    opacity: 1;
-}
-.header > div.link:hover > a.Discord {
-    display: block;
-}
-.header > div.link > a.Discord {
-    color: white;
-    display: none;
-    text-align: center;
-    position: relative;
-    top: calc(100% - 14px - (50% / 4));
-    font-size: 14px;
-} */
