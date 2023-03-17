@@ -8,10 +8,37 @@
     font-size: 14pt;
 }
 body {
-    background: #24232f;
+    background: #04030F;
 }
 
+.info {
+  position: absolute;
+  background: #04f30f;
+  top: 32px;
+  width: 100%;
+  height: 384px;
+}
+
+.info > b > big {
+  font-size: 64px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.info > b {
+  padding: 64px;
+  display: block;
+  width: 1650px;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: lowercase;
+  overflow-wrap: break-word;
+}
+
+
+
 .elem {
-  width: 100vw;
-  height: 100vh;
+  width: 0;
+  height: 1000vw;
 }
