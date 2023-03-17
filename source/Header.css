@@ -12,7 +12,7 @@
     position: fixed;
     height: 32px;
     width: 100%;
-    background: #04f30f;
+    background: var(--main-g-color);
     z-index: 999999999999;
 }
 .header > img {

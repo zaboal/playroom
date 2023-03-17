@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Martian+Mono");
 
+:root {
+  --main-b-color: #04030F;
+  --main-g-color: #04f30f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +13,15 @@
     font-size: 14pt;
 }
 body {
-    background: #04030F;
+    background: var(--main-b-color);
+    display: flex;
+    min-height: 1000vh;
+    flex-direction: column;
 }
 
 .info {
-  position: absolute;
-  background: #04f30f;
+  position: relative;
+  background: var(--main-g-color);
   top: 32px;
   width: 100%;
   height: 384px;
@@ -36,9 +44,20 @@ body {
   overflow-wrap: break-word;
 }
 
+.footer {
+  display: block;
+  height: 32px;
+  width: 100%;
+  background: var(--main-g-color);
+  margin-top: auto;
+  text-align: center;
+}
 
-
-.elem {
-  width: 0;
-  height: 1000vw;
+.footer > h1 {
+  letter-spacing: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 8px 0px;
+  text-decoration: none;
+  text-transform: none;
 }
