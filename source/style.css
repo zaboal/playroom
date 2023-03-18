@@ -50,7 +50,7 @@ body,div.black {
   min-height: 384px;
 }
 .info > b {
-  padding: 64px 0 0 64px;
+  padding: 64px 0 80px 64px;
   display: block;
   max-width: 1594px;
   font-size: 64px;
