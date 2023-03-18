@@ -3,50 +3,56 @@
 :root {
   --main-b-color: #04030F;
   --main-g-color: #04f30f;
+  --main-width: 1900px;
+  --main-height: 1000vh;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Martian Mono", monospace;
-    font-size: 14pt;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martian Mono", monospace;
+  font-size: 14pt;
 }
+
 body {
-    background: var(--main-b-color);
-    display: flex;
-    min-height: 1000vh;
-    flex-direction: column;
+  overflow-x: hidden;
 }
 
-.info {
-  position: relative;
-  background: var(--main-g-color);
-  top: 32px;
+body,div.black {
+  background: var(--main-b-color);
+  display: flex;
+  min-height: var(--main-height);
   width: 100%;
-  height: 384px;
+  height: 100%;
+  flex-direction: column;
 }
 
-.info::after {
-  content: "";
-  display: block;
-  width: calc(1930px - 27px);
-  height: 384px;
-  position: absolute;
-  top: 0;
+/* Header */
+.header {
+  position: fixed;
+  height: 32px;
+  width: 100%;
   background: var(--main-g-color);
-  z-index: -1;
+  z-index: 999999999999;
 }
-
-.info > b > big {
-  font-size: 64px;
-  color: rgba(0, 0, 0, 0.25);
-}
-
-.info > b {
-  padding: 64px;
+.header > img {
+  height: 100%;
+  margin: auto;
   display: block;
-  width: 1594px;
+  padding: 8px 0px 8px 0px;
+}
+/* Info */
+.info {
+  margin-top: 32px;
+  background: var(--main-g-color);
+  width: 100%;
+  min-height: 384px;
+}
+.info > b {
+  padding: 64px 0 0 64px;
+  display: block;
+  max-width: 1594px;
   font-size: 64px;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -54,7 +60,11 @@ body {
   text-transform: lowercase;
   overflow-wrap: break-word;
 }
-
+.info > b > big {
+  font-size: 64px;
+  color: rgba(0, 0, 0, 0.25);
+}
+/* Footer */
 .footer {
   display: block;
   height: 32px;
@@ -71,15 +81,4 @@ body {
   padding: 5px 0px 8px 0px;
   text-decoration: none;
   text-transform: none;
-}
-
-.footer::before {
-  content: "";
-  display: block;
-  width: calc(1930px - 27px);
-  height: 32px;
-  margin-top: auto;
-  position: absolute;
-  background: var(--main-g-color);
-  z-index: -1;
 }
