@@ -27,6 +27,17 @@ body {
   height: 384px;
 }
 
+.info::after {
+  content: "";
+  display: block;
+  width: calc(1930px - 27px);
+  height: 384px;
+  position: absolute;
+  top: 0;
+  background: var(--main-g-color);
+  z-index: -1;
+}
+
 .info > b > big {
   font-size: 64px;
   color: rgba(0, 0, 0, 0.25);
@@ -35,7 +46,7 @@ body {
 .info > b {
   padding: 64px;
   display: block;
-  width: 1650px;
+  width: 1594px;
   font-size: 64px;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -60,4 +71,15 @@ body {
   padding: 5px 0px 8px 0px;
   text-decoration: none;
   text-transform: none;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: calc(1930px - 27px);
+  height: 32px;
+  margin-top: auto;
+  position: absolute;
+  background: var(--main-g-color);
+  z-index: -1;
 }
