@@ -2,9 +2,13 @@
 
 :root {
   --main-b-color: #04030F;
-  --main-g-color: #04f30f;
+  --main-g-color: #04F30F;
+  --main-text-g: #04F30F;
+  --main-text-b: #04030F;
   --main-width: 1900px;
   --main-height: 500vh;
+  --error-width: 1900px;
+  --error-height: 100vh;
 }
 
 * {
@@ -14,11 +18,11 @@
   font-family: "Martian Mono", monospace;
   font-size: 14pt;
 }
-
+/* Body */
+/* Black */
 body {
   overflow-x: hidden;
 }
-
 body,div.black {
   background: var(--main-b-color);
   display: flex;
@@ -27,29 +31,59 @@ body,div.black {
   height: 100%;
   flex-direction: column;
 }
+/* Error */
+/* Green */
+body,div.error {
+  background: var(--main-g-color);
+  display: flex;
+  min-height: var(--error-height);
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
 
 /* Header */
-.header {
+/* Black */
+div.black > .header {
   position: fixed;
   height: 32px;
   width: 100%;
   background: var(--main-g-color);
   z-index: 999999999999;
 }
-.header > img {
+div.black > .header > img {
   height: 100%;
   margin: auto;
   display: block;
   padding: 8px 0px 8px 0px;
 }
+/* Error */
+/* Green */
+div.error > .header {
+  position: fixed;
+  height: 32px;
+  width: 100%;
+  background: var(--main-b-color);
+  z-index: 999999999999;
+}
+div.error > .header > img {
+  height: 100%;
+  margin: auto;
+  display: block;
+  padding: 8px 0px 8px 0px;
+}
+
+
 /* Info */
-.info {
+/* Black */
+div.black > .info {
   margin-top: 32px;
   background: var(--main-g-color);
   width: 100%;
   min-height: 384px;
 }
-.info > b {
+div.black > .info > b {
   padding: 64px 0 80px 64px;
   display: block;
   max-width: 1594px;
@@ -60,12 +94,46 @@ body,div.black {
   text-transform: lowercase;
   overflow-wrap: break-word;
 }
-.info > b > big {
+div.black > .info > b > big {
   font-size: 64px;
   color: rgba(0, 0, 0, 0.25);
 }
+/* Error */
+/* Green */
+div.error > .info {
+  margin-top: 64px;
+  background: var(--main-g-color);
+  display: flex;
+  width: 100%;
+  min-height: 384px;
+  color: var(--main-text-b);
+}
+div.error > .info > h1 {
+  font-size: 512px;
+  line-height: 1.2;
+  margin-left: 117.25px;
+}
+div.error > .info > .row {
+  width: 512px;
+  height: 512px;
+  padding-top: 158px;
+  margin-left: 65px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+div.error > .info > .row > .h1 {
+  font-size: 40px;
+  text-transform: lowercase;
+  padding-bottom: 32px;
+}
+div.error > .info > .row > .p {
+  font-size: 34px;
+}
+
 /* Footer */
-.footer {
+/* Black */
+div.black > .footer {
   display: block;
   height: 32px;
   width: 100%;
@@ -73,8 +141,26 @@ body,div.black {
   margin-top: auto;
   text-align: center;
 }
-
-.footer > h1 {
+div.black > .footer > h1 {
+  letter-spacing: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 8px 0px;
+  text-decoration: none;
+  text-transform: none;
+}
+/* Error */
+/* Green */
+div.error > .footer {
+  display: block;
+  height: 32px;
+  width: 100%;
+  background: var(--main-b-color);
+  color: var(--main-text-g);
+  margin-top: auto;
+  text-align: center;
+}
+div.error > .footer > h1 {
   letter-spacing: 4px;
   width: 100%;
   height: 100%;
