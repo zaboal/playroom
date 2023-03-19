@@ -28,4 +28,6 @@ const isMobile = ((dc, wd) => {
 
 var iFrameDetection = (window === window.parent) ? false : true;
 
-alert(isMobile, " == ", iFrameDetection);
+if(isMobile == true || iFrameDetection == true) {
+    document.write("ERROR");
+}
