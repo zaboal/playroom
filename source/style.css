@@ -113,7 +113,7 @@ div.error > .info {
 div.error > .info > h1 {
   font-size: 512px;
   line-height: 1.2;
-  margin-left: 32.25px;
+  margin-left: 117.25px;
 }
 div.error > .info > .row {
   width: 512px;
@@ -169,4 +169,15 @@ div.error > .footer > h1 {
   padding: 5px 0px 8px 0px;
   text-decoration: none;
   text-transform: none;
+}
+
+@media screen and (min-width: 1750px) and (max-width: 1890px) {
+  /* Info */
+  /* Error */
+  /* Green */
+  div.error > .info > h1 {
+    font-size: 512px;
+    line-height: 1.2;
+    margin-left: 32.25px !important;
+  }
 }
