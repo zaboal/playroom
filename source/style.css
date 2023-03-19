@@ -170,13 +170,3 @@ div.error > .footer > h1 {
   text-decoration: none;
   text-transform: none;
 }
-
-/* Adaptite */
-/* Error */
-@media only screen and (max-width: 50%) {
-  div.error > .info > h1 {
-    font-size: calc(512px / 2);
-    line-height: 1.2;
-    margin-left: 117.25px;
-  }
-}
