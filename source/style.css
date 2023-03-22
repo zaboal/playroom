@@ -100,7 +100,7 @@ div.black > .info > b > big {
 }
 /* Error */
 /* Green */
-div.error > .info {
+div.error#site > .info {
   margin-top: 64px;
   background: var(--main-g-color);
   display: flex;
@@ -110,12 +110,12 @@ div.error > .info {
   min-height: 384px;
   color: var(--main-text-b);
 }
-div.error > .info > h1 {
+div.error#site > .info > h1 {
   font-size: 512px;
   line-height: 1.2;
   margin-left: 117.25px;
 }
-div.error > .info > .row {
+div.error#site > .info > .row {
   width: 512px;
   height: 512px;
   padding-top: 158px;
@@ -124,14 +124,15 @@ div.error > .info > .row {
   display: flex;
   flex-direction: column;
 }
-div.error > .info > .row > .h1 {
+div.error#site > .info > .row > .h1 {
   font-size: 40px;
   text-transform: lowercase;
   padding-bottom: 32px;
 }
-div.error > .info > .row > .p {
+div.error#site > .info > .row > .p {
   font-size: 34px;
 }
+
 
 /* Footer */
 /* Black */
@@ -175,7 +176,7 @@ div.error > .footer > h1 {
   /* Info */
   /* Error */
   /* Green */
-  div.error > .info > h1 {
+  div.error#site > .info > h1 {
     font-size: 512px;
     line-height: 1.2;
     margin-left: 32.25px !important;
