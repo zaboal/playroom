@@ -81,7 +81,7 @@ div.error#mobile > .info > b > big {
 /* Green */
 div.error#mobile > .footer {
     display: block;
-    height: 32px;
+    min-height: 32px;
     width: 100%;
     background: var(--main-b-color);
     color: var(--main-text-g);
