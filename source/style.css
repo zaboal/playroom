@@ -12,6 +12,12 @@
     font-family: "Martian Mono";
     font-size: 6.604747162022703vmin;
 }
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
 /* ============DESKTOP============ */
 /* MAIN_SITE_START */
 .main.desktop {
@@ -81,7 +87,7 @@
 .main.error {
     display: grid;
     width: 100%;
-    height: -webkit-fill-available;
+    height: 100%;
     background: var(--main-g-color);
     grid-template-rows: 3.3023735810113517vmin auto 3.3023735810113517vmin;
 }
