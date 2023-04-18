@@ -81,7 +81,7 @@
 .main.error {
     display: grid;
     width: 100%;
-    height: 100%;
+    height: -webkit-fill-available;
     background: var(--main-g-color);
     grid-template-rows: 3.3023735810113517vmin auto 3.3023735810113517vmin;
 }
