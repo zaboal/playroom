@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
     box-sizing: border-box;
     font-family: "Martian Mono";
     font-size: 6.604747162022703vmin;
