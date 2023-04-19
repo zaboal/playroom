@@ -23,6 +23,9 @@ html, body {
 body.desktop .main.desktop {
     display: grid;
 }
+body.desktop .main.error {
+    display: grid;
+}
 body.mobile .main.mobile {
     display: grid;
 }
@@ -95,7 +98,7 @@ body.mobile .main.mobile {
 /* ============ERROR============ */
 /* MAIN_ERROR_START */
 .main.error {
-    display: grid;
+    display: none;
     width: 100%;
     height: 100%;
     background: var(--main-g-color);
