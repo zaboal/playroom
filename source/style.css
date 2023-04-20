@@ -1,249 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
-
-:root {
-    --main-b-color: #04030F;
-    --main-g-color: #04F30F;
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Martian Mono";
+}
+body{
+  background: rgba(4, 3, 15, 100);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    box-sizing: border-box;
-    font-family: "Martian Mono";
-    font-size: 6.604747162022703vmin;
+
+header{
+  position: sticky;
+  top: 0px;
+  height: 24px;
+  background:rgb(4, 236, 4);
+}
+ul{
+  display: flex;
+  justify-content: center;
+}
+ul img{
+  width: 26px;
+  text-align: center;
+  margin-top:5px;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+.Introduction{
+  font-size: 50px;
+  background:rgb(4, 236, 4);
+  padding-left: 50px;
+  padding-top: 50px;
+  font-weight: bold;
+  padding-bottom: 50px;
 }
 
-/* SWITCH_DESKTOP_MOBILE_START */
-body.desktop .main.desktop {
-    display: grid;
-}
-body.desktop .main.error {
-    display: grid;
-}
-body.mobile .main.mobile {
-    display: grid;
-}
-/* SWITCH_DESKTOP_MOBILE_END */
-
-/* ============DESKTOP============ */
-/* MAIN_SITE_START */
-.main.desktop {
-    display: none;
-    width: 100%;
-    min-height: 500vmin;
-    height: 100%;
-    background: var(--main-b-color);
-    grid-template-rows: 3.3023735810113517vmin auto 3.3023735810113517vmin;
-}
-/* MAIN_SITE_END */
-
-/* HEADER_START */
-.main.desktop .header {
-    position: sticky;
-    top: 0;
-    background: var(--main-g-color);
+.main{
+  height: 3000px;
 }
 
-.main.desktop .header img {
-    margin: auto;
-    display: block;
-    padding: 0.8255933952528379vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
+footer{
+  height: 25px;
+  background:rgb(4, 236, 4);
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing:3px;
 }
-/* HEADER_END */
-
-/* FOOTER_START */
-.main.desktop .footer {
-    background: var(--main-g-color);
-    text-align: center;
-}
-
-.main.desktop .footer h1 {
-    font-size: 1.9263845889232885vmin;
-    letter-spacing: 0.41279669762641896vmin;
-    padding: 0.5159958720330238vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
-}
-/* FOOTER_END */
-
-/* BODY_INFO_START */
-.main.desktop .body .info {
-    background: var(--main-g-color);
-    min-height: 39.628482972136226vmin;
-}
-
-.main.desktop .body .info b {
-    display: block;
-    max-width: 163.102167vmin;
-    padding: 6.604747162022703vmin 4vmin 8.25593395252838vmin 6.604747162022703vmin;
-    line-height: 1.25;
-    letter-spacing: 0.10319917440660474vmin;
-    white-space: pre-line;
-}
-
-.main.desktop .body .info big {
-    color: rgba(0, 0, 0, 0.25);
-    white-space: nowrap;
-}
-/* BODY_INFO_END */
-/* ============DESKTOP============ */
-
-
-/* ============ERROR============ */
-/* MAIN_ERROR_START */
-.main.error {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: var(--main-g-color);
-    grid-template-rows: 3.3023735810113517vmin auto 3.3023735810113517vmin;
-}
-/* MAIN_ERROR_END */
-
-/* HEADER_START */
-.main.error .header {
-    position: sticky;
-    top: 0;
-    background: var(--main-b-color);
-}
-
-.main.error .header img {
-    margin: auto;
-    display: block;
-    padding: 0.8255933952528379vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
-}
-/* HEADER_END */
-
-/* FOOTER_START */
-.main.error .footer {
-    background: var(--main-b-color);
-    text-align: center;
-    color: var(--main-g-color);
-}
-
-.main.error .footer h1 {
-    font-size: 1.9263845889232885vmin;
-    letter-spacing: 0.41279669762641896vmin;
-    padding: 0.5159958720330238vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
-}
-/* FOOTER_END */
-
-/* BODY_INFO_START */
-.main.error .body {
-    align-items: center;
-    display: grid;
-}
-
-.main.error .body .info {
-    display: flex;
-    gap: 4vmin;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.main.error .body .info h1 {
-    font-size: 52.83797729618163vmin;
-    text-align: center;
-    line-height: 1.2;
-}
-
-.main.error .body .info .row {
-    display: grid;
-    justify-content: center;
-    line-height: 1.25;
-    width: 50.69762641898865vmin;
-    margin: auto 3.3023735810113517vmin;
-    gap: 4vmin;
-}
-
-.main.error .body .info .row span {
-    font-size: 3.508771929824561vmin;
-}
-
-.main.error .body .info .row b {
-    font-size: 4.12796697626419vmin;
-    text-transform: lowercase;
-}
-
-@media only screen and (max-width: 172.23942208462333vmin) {
-    .main.error .body .info h1 {
-        font-size: 45vmin;
-        width: 100%;
-    }
-    .main.error .body .info .row {
-        width: 100%;
-    }  
-}
-/* BODY_INFO_END */
-/* ============ERROR============ */
-
-
-/* ============MOBILE============ */
-/* MAIN_MOBILE_START */
-.main.mobile {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: var(--main-g-color);
-    grid-template-rows: 3.3023735810113517vmin auto 3.3023735810113517vmin;
-}
-
-/* MAIN_MOBILE_END */
-/* MOBILE_HEADER_START */
-.main.mobile .header {
-    position: sticky;
-    top: 0;
-    background: var(--main-b-color);
-}
-
-.main.mobile .header img {
-    margin: auto;
-    display: block;
-    padding: 0.8255933952528379vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
-}
-
-/* MOBILE_HEADER_END */
-/* MOBILE_FOOTER_START */
-.main.mobile .footer {
-    background: var(--main-b-color);
-    color: var(--main-g-color);
-    text-align: center;
-}
-
-.main.mobile .footer h1 {
-    font-size: 1.9263845889232885vmin;
-    letter-spacing: 0.41279669762641896vmin;
-    padding: 0.5159958720330238vmin 0vmin 0.8255933952528379vmin 0vmin;
-    height: 100%;
-}
-
-/* MOBILE_FOOTER_END */
-/* MOBILE_BODY_INFO_START */
-.main.mobile .body {
-    align-items: center;
-    display: grid;
-}
-
-.main.mobile .body .info {
-    display: grid;
-    width: 65vmin;
-    margin: auto;
-    gap: 6.604747162022703vmin;
-    line-height: 1.25;
-}
-
-.main.mobile .body .info b:nth-child(2) {
-    color: rgba(4, 3, 15, 0.25);
-}
-
-/* MOBILE_BODY_INFO_END */
-/* ============MOBILE============ */
