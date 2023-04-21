@@ -47,7 +47,7 @@ footer{
   letter-spacing:3px;
 }
 
-@media (max-width: 828px){
+@media (max-width: 828px), (max-width: 390px){
   *{
     padding: 0px;
     margin: 0px;
