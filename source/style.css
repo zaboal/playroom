@@ -46,3 +46,32 @@ footer{
   font-size: 18px;
   letter-spacing:3px;
 }
+
+@media (max-width: 828px){
+  header{
+    position: sticky;
+    top: 0px;
+    height: 26px;
+    background:rgb(4, 236, 4);
+  }
+  .Introduction{
+    font-size: 25px;
+    background:rgb(4, 236, 4);
+    padding-left: 50px;
+    padding-top: 25px;
+    font-weight: bold;
+    padding-bottom: 25px;
+  }
+  footer{
+    height: 25px;
+    background:rgb(4, 236, 4);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    letter-spacing:3px;
+  }
+  footer p{
+    padding-top: 5px;
+  }
+}
